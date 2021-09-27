@@ -75,7 +75,7 @@ your package as it's listed in `npm search`.
 
 ### homepage
 
-The url to the project homepage.
+The URL to the project homepage.
 
 Example:
 
@@ -85,7 +85,7 @@ Example:
 
 ### bugs
 
-The url to your project's issue tracker and / or the email address to which
+The URL to your project's issue tracker and / or the email address to which
 issues should be reported. These are helpful for people who encounter
 issues with your package.
 
@@ -99,10 +99,10 @@ It should look like this:
 ```
 
 You can specify either one or both values. If you want to provide only a
-url, you can specify the value for "bugs" as a simple string instead of an
+URL, you can specify the value for "bugs" as a simple string instead of an
 object.
 
-If a url is provided, it will be used by the `npm bugs` command.
+If a URL is provided, it will be used by the `npm bugs` command.
 
 ### license
 
@@ -222,7 +222,7 @@ npm also sets a top-level "maintainers" field with your npm user info.
 
 ### funding
 
-You can specify an object containing an URL that provides up-to-date
+You can specify an object containing a URL that provides up-to-date
 information about ways to help fund development of your package, or a
 string URL, or an array of these:
 
@@ -254,10 +254,10 @@ string URL, or an array of these:
 }
 ```
 
-Users can use the `npm fund` subcommand to list the `funding` URLs of all
+Users can use the `npm fund` subcommand to list the `funding` urls of all
 dependencies of their project, direct and indirect. A shortcut to visit
 each funding url is also available when providing the project name such as:
-`npm fund <projectname>` (when there are multiple URLs, the first one will
+`npm fund <projectname>` (when there are multiple urls, the first one will
 be visited)
 
 ### files
@@ -493,9 +493,9 @@ Do it like this:
 }
 ```
 
-The URL should be a publicly available (perhaps read-only) url that can be
+The url should be a publicly available (perhaps read-only) URL that can be
 handed directly to a VCS program without any modification.  It should not
-be a url to an html project page that you put in your browser.  It's for
+be a URL to an HTML project page that you put in your browser.  It's for
 computers.
 
 For GitHub, GitHub gist, Bitbucket, or GitLab repositories you can use the
@@ -618,7 +618,7 @@ install time.
 
 #### Git URLs as Dependencies
 
-Git urls are of the form:
+Git URLs are of the form:
 
 ```bash
 <protocol>://[<user>[:<password>]@]<hostname>[:<port>][:][/]<path>[#<commit-ish> | #semver:<semver>]
@@ -645,7 +645,7 @@ git://github.com/npm/cli.git#v1.0.27
 
 #### GitHub URLs
 
-As of version 1.1.65, you can refer to GitHub urls as just "foo":
+As of version 1.1.65, you can refer to GitHub URLs as just "foo":
 "user/foo-project".  Just as with git URLs, a `commit-ish` suffix can be
 included.  For example:
 
@@ -843,7 +843,7 @@ If this is spelled `"bundleDependencies"`, then that is also honored.
 If a dependency can be used, but you would like npm to proceed if it cannot
 be found or fails to install, then you may put it in the
 `optionalDependencies` object.  This is a map of package name to version or
-url, just like the `dependencies` object.  The difference is that build
+URL, just like the `dependencies` object.  The difference is that build
 failures do not cause installation to fail.  Running `npm install
 --no-optional` will prevent these dependencies from being installed.
 
